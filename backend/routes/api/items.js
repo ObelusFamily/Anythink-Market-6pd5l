@@ -54,7 +54,8 @@ router.get("/", auth.optional, function (req, res, next) {
   }
 
   if (typeof req.query.title !== "undefined") {
-    query.title = { $in: req.query.title }
+    const title = req.query.title;
+    query.title = { $regex: new RegExp(title, "i") };
   }
 
   Promise.all([
