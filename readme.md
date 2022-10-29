@@ -10,4 +10,12 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+```sh
+git clone git@github.com:ObelusFamily/Anythink-Market-6pd5l.git
+cd Anythink-Market-6pd5l
+open cmd and run the below docker commands:
+docker-compose up
+
+The Frontend should now be running on [localhost:3001](http://localhost:3001/).
+And the Backend should now be running on [localhost:3000](http://localhost:3000/).
+```
